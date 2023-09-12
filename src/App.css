@@ -46,7 +46,8 @@
 form.convert-form input {
   display: block;
   margin: auto;
-  width: 400px;
+  width: 500px;
+  max-width: 400px;
   padding: 12px 15px;
   margin-top: 35px;
   border: none;
@@ -82,3 +83,27 @@ form.convert-form button {
   font-weight: 500;
 }
 /* Tool */
+
+@media screen and (max-width: 600px) {
+  form.convert-form input {
+    max-width: 300px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .tool-content h1 {
+    font-size: 30px;
+  }
+
+  .tool-content p {
+      font-size: 12px;
+  }
+
+  form.convert-form button {
+      font-size: 14px;
+      padding: 10px 0;
+  }
+
+  .tool-content a {
+      font-size: 12px;
+  }
+}
